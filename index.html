@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Retráctiles</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+  <a-entity id="rig" movement-controls kinematic-body position="2.192 0 2">
+  <a-entity id="camera" camera position="0 2 0" look-controls cursor="rayOrigin: mouse"></a-entity>
+  </a-entity>
+  
+  <a-entity environment="active:true;seed:26;skyType:gradient;skyColor:#FFFEF4;horizonColor:#B6B4B4;lightPosition:0 1.65 -1;fog:0;groundYScale:5;groundTexture:walkernoise;groundColor:#616161;groundColor2:#A0A3A2;dressing:none;dressingColor:#7c5c45;dressingVariance:20 20 20;grid:spots;gridColor:#e4b676;preset:egypt" preset-switcher="" id="environment"><a-entity class="environment" position="0 50 0" light="color:#72C40B;groundColor:#72C40B;intensity:0.2;type:hemisphere"></a-entity> <a-entity class="environment" position="0 1.65 -1" light="shadowCameraLeft:-5;shadowCameraBottom:-5;shadowCameraRight:5;shadowCameraTop:5;intensity:0.2">
+  </a-entity>
+
+  <a-entity rotation="-90 0 0" class="environmentGround environment" scale="3.9299999999999997 2.37 4" shadow="cast:false;receive:false" position="0.88 -0.77 0"></a-entity><a-entity class="environmentDressing environment"></a-entity> <a-sky radius="200" theta-length="110" class="environment" geometry=" "material="npot:false;shader:gradientshader;topColor:#155142;bottomColor:#e4b676"></a-sky> <a-entity id="stars" visible="false"></a-entity>
+  </a-entity>
+
+  <a-camera position="19.11676 1.5485 -34.12687"> </a-camera>
+
+      <a-assets timeout = "10000">
+      <a-asset-item id="MISERABLE" src="./MISERABLE.gltf"></a-asset-item>
+      
+
+      <a-asset-item id="MEMENTO" src="./MEMENTO.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="VIDEOCON" src="./VIDEOCON.gltf"></a-asset-item>
+
+      <a-asset-item id="AFRAMEOFICIALLL" src="./AFRAMEOFICIALLL.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MISERABLE" src="./MISERABLE.gltf"></a-asset-item>
+
+      <a-asset-item id="HUEVO" src="./HUEVO.gltf"></a-asset-item>
+
+      <a-asset-item id="EHHSI" src="./EHHSI.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="boton" src="./boton.gltf"></a-asset-item>
+
+    
+
+     </a-assets>
+
+    <a-gltf-model src="#MISERABLE" position="23.820  9.160 -35.090" scale=" 1  1  1" rotation="0 0 0"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-gltf-model>
+
+
+    <a-gltf-model src="#MEMENTO" position="23.820  9.160 -35.090" scale=" 1  1  1" rotation="0 0 0"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-gltf-model>
+
+      <a-gltf-model src="#FINAL" position="-31.41951 -2.98848 -89.56556" scale="0.26015 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+      <a-gltf-model src="#VIDEOCON" position="127.35646 2.53011 186.20692" scale="0.98662 0.85392 3.46579" gltf-model="./VIDEOCON.gltf">
+      </a-gltf-model>
+
+
+    <a-gltf-model src="AFRAMEOFICIALLL" position=" 1  0.77 -3" scale=" 1  1  1"> </a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-2.84026 -6.11045 54.69058" scale="2 2 2" opacity="0.2"
+      static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MISERABLE" position="-262.02769 -28.50923 142.00017" scale="5.17859 15.09412 11.14988" gltf-model="./MISERABLE.gltf" rotation="-10.682798090214199 27.24586203185604 -160.6957539269566">
+      </a-gltf-model>
+
+    <a-gltf-model src="HUEVO" position=" 1  0.77 -3" scale=" 1  1  1"> </a-gltf-model>
+
+    <a-gltf-model src="EHHSI" position=" 3  0.77 -3" scale=" 2  2  2"> </a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-111.15281 -6.11045 54.69058" scale="8.78914 4.22464 2" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-175.21782 -5.71045 59.97746" scale="6.42213 7.20105 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="49.56544 -4.24286 -60.68216" scale="1.0824 2.04466 1.42908" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-92.34007 -5.71045 24.28058" scale="6.42213 7.20105 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="37.57722 -2.87395 13.14617" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="73.52139 -2.87395 58.59823" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="140.40129 -2.87395 58.59823" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+ 
+    <a-gltf-model src="#FINAL" position="128.16936 -2.87395 -10.55439" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="128.16936 -2.87395 -92.44124" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="-17.51933 -2.87395 -20.26822" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#boton"  navigate-on-click="url: https://vimeo.com/558995271" position="19.11676 1.5485 -34.12687" scale=" 1  1  1" rotation="0 0 0"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-gltf-model>
+
+    <a-sound src="src: url(./Fiestareceta.mp3)" autoplay="true" volume="45" position="-92.34007 -5.71045 24.28058"> </a-sound>
+   
+    <video id="Retráctiles22" autoplay loop="true" src="Retráctiles22.mp4"></video>
+
+
+    <!-- Using the asset management system. -->
+    
+    <a-video src="#Retráctiles22" width="16" height="9" scale="0.71979 0.75452 1" position="19.11676 3.39215 -41.12687" material="" geometry="">
+    </a-video>
+   
+    <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+
+    <a-escene>
+      <script>
+        AFRAME.registerComponent('navigate-on-click', {
+          schema: {
+            url: { default: '' }
+          },
+
+          init: function () {
+            var data = this.data;
+            var el = this.el;
+
+            el.addEventListener('click', function () {
+              window.location.href = data.url;
+            });
+          }
+        });
+      </script>
+
+
+</a-scene>
+
+</body>
+
+</html>
